@@ -1,9 +1,9 @@
 import 'package:linkify/linkify.dart';
 
 /// For details on how this RegEx works, go to this link.
-/// https://regex101.com/r/QN046t/1
+/// https://regex101.com/r/HDegq4/1
 final _userTagRegex = RegExp(
-  r'^(.*?)(?<![\w@])@([\w@]+(?:[.!][\w@]+)*)',
+  r'^(.*?)(?<![a-zA-Z0-9_À-ú@])@([a-zA-Z0-9_À-ú@]+(?:[.!][a-zA-Z0-9_À-ú@]+)*)',
   caseSensitive: false,
   dotAll: true,
 );
